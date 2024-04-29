@@ -20,6 +20,12 @@ mongoose
   .then(() => console.log("Connected to MongoDB Compass"))
   .catch((err) => console.error("Could not connect to MongoDB", err));
 
+
+app.get("/",(req,res)=>{
+    res.send("welcome")
+})
+
+
 // CREATE Mentor
 app.post("/mentor", async (req, res) => {
   try {
